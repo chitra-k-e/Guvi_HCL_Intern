@@ -5,10 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "login.html";
     return;
   }
-
-  // AJAX call to fetch user details from database using email
   $.ajax({
-    url: 'php/profile.php',   // <-- make sure this matches your file name
+    url: 'php/profile.php',   
     type: 'POST',
     data: { email: userEmail },
     dataType: 'json',
