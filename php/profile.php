@@ -7,10 +7,10 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-$host = "localhost";
-$dbname = "user_management";
-$user = "root";
-$pass = "";
+$host = "sql211.infinityfree.com";
+$dbname = "if0_40060612_user_management";
+$user = "if0_40060612";
+$pass = "Chitrake27";
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass, [
