@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
       dataType: 'json',
       success: function(res) {
         if (res.status === 'success') {
-          // Store user details in localStorage
           localStorage.setItem('user', JSON.stringify(res.data));
           setTimeout(() => {
             window.location.href = 'profile.html';
