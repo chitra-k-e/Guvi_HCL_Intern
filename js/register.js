@@ -100,11 +100,10 @@ document.addEventListener("DOMContentLoaded", () => {
         catch(e) { alert("Invalid response from server: " + response); return; }
 
         if (res.status === 'success') {
-          $('#registerForm')[0].reset(); // Clear form
-          alert(res.message); // Show success message
-          // Redirect to login page after alert
+          $('#registerForm')[0].reset(); 
+          alert(res.message); 
           setTimeout(() => {
-            window.location.href = 'login.html'; // Replace with your login page
+            window.location.href = 'login.html'; 
           }, 10);
         } else {
           alert(res.message);
